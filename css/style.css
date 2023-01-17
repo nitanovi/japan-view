@@ -5,6 +5,14 @@
     /*a name to be used later*/
     src: url(../font/Gilroy-ExtraBold.otf);
     /*URL to font*/
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Gilroy';
+    /*a name to be used later*/
+    src: url(../font/Gilroy-Light.otf);
+    /*URL to font*/
+    font-weight: lighter;
 }
 
 * {
@@ -80,6 +88,8 @@ input[type=search] {
 .menu-list {
     position: relative;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    margin: 0 auto;
+    width: 80%;
 }
 
 .header-content {
@@ -243,7 +253,6 @@ li:focus-within>button>.arrow {
         background: #fff;
         display: flex;
         transform: initial;
-        justify-content: space-between;
         width: 70%;
         color: #474747;
         font-family: 'Karla', sans-serif;
@@ -251,12 +260,13 @@ li:focus-within>button>.arrow {
         align-items: center;
         margin: 0 auto;
     }
+
     button {
         font-family: 'Karla', sans-serif;
         font-size: 16px;
         color: #474747;
     }
-    
+
 
     label,
     input[type="checkbox"] {
@@ -294,4 +304,198 @@ li:focus-within>button>.arrow {
         transform: rotate(-225deg);
         margin-top: 4px;
     }
+}
+
+.swiper-slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
+.jv-list-img span {
+    background: #c80d0d;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    left: 8PX;
+    padding: 0px 10px 0px 25px;
+    height: 26px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+}
+
+.jv-list-img span::after {
+    content: '';
+    position: absolute;
+    left: 100%;
+    top: 0;
+    border-left: 5px solid #c80d0d;
+    border-right: 13px solid transparent;
+    border-bottom: 13px solid #c80d0d;
+    border-top: 13px solid #c80d0d;
+}
+
+/* SLIDER  */
+.new-slider {
+    font-weight: normal;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    font-size: 18px;
+    width: 2000px;
+    text-align: center;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide.swiper-slide-prev{
+    transform: translateX(15%);
+}           
+.swiper-slide.swiper-slide-next{
+    transform: translateX(-15%);
+}
+.img-1 {
+    background-image: url('https://japanview.tv/wp-content/uploads/2022/12/01-1-1200x800.jpg'), linear-gradient(to bottom, rgba(163, 66, 94, 0) 0%, rgba(141, 82, 99, 0.418) 60%, rgb(172, 93, 114) 100%);
+    background-blend-mode: soft-light;
+    display: block;
+    width: 905px;
+    height: 515px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.img-2 {
+    background-image: url('https://japanview.tv/wp-content/uploads/2022/12/1-1.jpg'), linear-gradient(to bottom, rgba(163, 66, 94, 0) 0%, rgba(141, 82, 99, 0.418) 60%, rgb(172, 93, 114) 100%);
+    background-blend-mode: soft-light;
+    display: block;
+    width: 905px;
+    height: 515px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.img-3 {
+    background-image: url('https://japanview.tv/wp-content/uploads/2022/12/sub1-1200x800.jpg'), linear-gradient(to bottom, rgba(163, 66, 94, 0) 0%, rgba(141, 82, 99, 0.418) 60%, rgb(172, 93, 114) 100%);
+    background-blend-mode: soft-light;
+    display: block;
+    width: 905px;
+    height: 515px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.img-4 {
+    background-image: url('https://japanview.tv/wp-content/uploads/2022/12/thumb.jpg'), linear-gradient(to bottom, rgba(163, 66, 94, 0) 0%, rgba(141, 82, 99, 0.418) 60%, rgb(172, 93, 114) 100%);
+    background-blend-mode: soft-light;
+    display: block;
+    width: 905px;
+    height: 515px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.img-5 {
+    background-image: url('https://japanview.tv/wp-content/uploads/2022/11/thumbnail-upi.jpg'), linear-gradient(to bottom, rgba(163, 66, 94, 0) 0%, rgba(141, 82, 99, 0.418) 60%, rgb(172, 93, 114) 100%);
+    background-blend-mode: soft-light;
+    display: block;
+    width: 905px;
+    height: 515px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.swiper-wrapper {
+    overflow: visible;
+}
+
+/* TEXT SLIDER  */
+.jv-list-body {
+    display: flex;
+    position: absolute;
+    bottom: 15px;
+    color: #fff;
+    font-size: 34px;
+    align-items: center;
+}
+.jv-list-date p, .jv-list-txt p {
+    margin: 0px 15px 0px 15px;
+}
+.jv-list-body a {
+    text-decoration: none;
+    color: #fff;
+}
+.jv-list-post-type {
+    border: solid 1px #fff;
+    border-radius: 50px;
+    padding: 2px 10px;
+    flex-shrink: 0;
+    margin: 0px 0px 0px 15px;
+}
+/* MAIN CONTENT  */
+.wrapper {
+    width: 88%;
+    margin: 0 auto;
+}
+.main-content {
+    width: 70%;
+}
+/* VIDEO  */
+.title {
+    display: flex;
+    align-items: baseline;
+    border-bottom: solid 4px #cd8d9f;
+    justify-content: space-between;
+    margin-top: 40px;
+    display: flex;
+    align-items: baseline;
+}
+.title a {
+    text-decoration: none;
+    text-align: center;
+    background-image: linear-gradient(#c96e88, #cd8d9f);
+    color: #fff;
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 10px 10px 10px 10px;
+    font-size: 14px;
+    border-radius: 50px;
+}
+.title h1 {
+    color: #fff;
+    font-weight: bold;
+    text-shadow:
+    -3px -3px 0 #cd8d9f,
+    0 -3px 0 #cd8d9f,
+    3px -3px 0 #cd8d9f,
+    3px 0 0 #cd8d9f,
+    3px 3px 0 #cd8d9f,
+    0 3px 0 #cd8d9f,
+    -3px 3px 0 #cd8d9f,
+    -3px 0 0 #cd8d9f;
+}
+.title .desc {
+    font-weight: bold;
+    color: #676767;
+    font-size: 24px;
 }
