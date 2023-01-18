@@ -26,7 +26,7 @@
                 <nav aria-label="main navigation">
                     <ul class="menus">
                         <li><a href="#">NEWS</a></li>
-                        <a>|</a>
+                        <a><b>|</b></a>
                         <li>
                             <button type="button" aria-haspopup="true" aria-expanded="true" aria-controls="dropdown1">
                                 Featured<span class="arrow"></span>
@@ -36,9 +36,9 @@
                                 <li><a href="#">COMMUNITY CORNER</a></li>
                             </ul>
                         </li>
-                        <a>|</a>
+                        <a><b>|</b></a>
                         <li><a href="#">LEARN JAPANESE</a></li>
-                        <a>|</a>
+                        <a><b>|</b></a>
                         <li>
                             <button type="button" aria-haspopup="true" aria-expanded="true" aria-controls="dropdown1">
                                 STUDY<span class="arrow"></span>
@@ -50,7 +50,7 @@
                                 <li><a href="#">Japanese Language School</a></li>
                             </ul>
                         </li>
-                        <a>|</a>
+                        <a><b>|</b></a>
                         <li>
                             <button type="button" aria-haspopup="true" aria-expanded="true" aria-controls="dropdown1">
                                 EXPERIENCE & LOCATION<span class="arrow"></span>
@@ -205,17 +205,84 @@
         <div class="main-content">
             <div class="video">
                 <div class="title">
-                    <span>
-                        <h1>Video</h1>
-                    </span>
-                    <span class="desc"> Jalan-jalan di Tokyo</span>
-                    <a href="">
-                        Baca Profile Riku The Traveller </a>
+                    <div class="tittle-kiri">
+                        <span>
+                            <h1>Video</h1>
+                        </span>
+                        <span class="desc"> Jalan-jalan di Tokyo</span>
+                    </div>
+                    <div class="tittle-kanan">
+                        <a href=""><b>
+                                Baca Profile Riku The Traveller</b></a>
+                    </div>
                 </div>
-            </div>
-        </div>
+                <div class="video-content">
+                    <div class="video-kiri">
+                        <div class="jv-video-img video-1">
+                            <a href="https://japanview.tv/id/videos/19427/" class="lightbox"></a>
+                        </div>
 
-    </div>
+                        <div class="jv-video-body">
+                            <div class="jv-video-txt">
+                                <p><a href="https://japanview.tv/id/videos/19427/" class="lightbox">
+                                        Riku's Guide Tokyo Explore : Shibuya</a><br>
+                                    <span class="excerpt"></span>
+                                </p>
+                            </div>
+                            <div class="jv-video-date">
+                                <p>2022.09.14</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-kanan">
+                        <div class="jv-video-img video-2">
+                            <a href="https://japanview.tv/id/videos/19309/" class="lightbox"></a>
+                        </div>
+
+                        <div class="jv-video-body">
+                            <div class="jv-video-txt">
+                                <p><a href="https://japanview.tv/id/videos/19309/" class="lightbox">
+                                        Riku's Guide Tokyo Explore : Takeshita-Dori <br></a>
+                                    <span class="excerpt">
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="jv-video-date">
+                                <p>2022.05.17</p>
+                            </div>
+                        </div>
+                        <div class="jv-video-img video-3">
+                            <a href="https://japanview.tv/id/videos/19298/" class="lightbox"></a>
+                        </div>
+
+                        <div class="jv-video-body">
+                            <div class="jv-video-txt">
+                                <p><a href="https://japanview.tv/id/videos/19309/" class="lightbox">
+                                        Riku's Guide Tokyo Explore : Asakusa <br></a>
+                                    <span class="excerpt">
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="jv-video-date">
+                                <p>2022.04.28</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="btn-primary" data-aos="fade-up"><a href="/id/videos/" class="btn-video">
+                        See More          </a></div>
+                    </div>
+    <!-- NEWS -->
+    <div class="news">
+        <div class="title">
+            <div class="tittle-kiri">
+                <span>
+                    <h1>News</h1>
+                </span>
+            </div>
+            </div>
+
+        </div>
     </div>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
@@ -223,16 +290,12 @@
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            slidesPerGroup: 1,
-            centeredSlides: false,
             loop: true,
-
-            fadeEffect: { // Add this
-                crossFade: true,
-            },
+            centeredSlides: true,
+            loopedSlides: 5,
+            slidesPerView: 1,
             autoplay: {
-                delay: 3000000,
+                delay: 3000,
             },
         });
     </script>
