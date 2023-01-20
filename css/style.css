@@ -381,59 +381,64 @@ li:focus-within>button>.arrow {
     transform: translateX(-15%);
 }
 
-.img-1 {
+.jv-article-img-1 {
     background-image: url('https://japanview.tv/wp-content/uploads/2022/12/01-1-1200x800.jpg'), linear-gradient(to bottom, rgba(163, 66, 94, 0) 0%, rgba(141, 82, 99, 0.418) 60%, rgb(172, 93, 114) 100%);
     background-blend-mode: soft-light;
-    width: 905px;
-    height: 515px;
+    width: 100%;
+    max-height: 515px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 10px;
+    position: relative;
 }
 
-.img-2 {
+.jv-article-img-2 {
     background-image: url('https://japanview.tv/wp-content/uploads/2022/12/1-1.jpg'), linear-gradient(to bottom, rgba(163, 66, 94, 0) 0%, rgba(141, 82, 99, 0.418) 60%, rgb(172, 93, 114) 100%);
     background-blend-mode: soft-light;
-    width: 905px;
-    height: 515px;
+    width: 100%;
+    max-height: 515px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 10px;
+    position: relative;
 }
 
-.img-3 {
+.jv-article-img-3 {
     background-image: url('https://japanview.tv/wp-content/uploads/2022/12/sub1-1200x800.jpg'), linear-gradient(to bottom, rgba(163, 66, 94, 0) 0%, rgba(141, 82, 99, 0.418) 60%, rgb(172, 93, 114) 100%);
     background-blend-mode: soft-light;
-    width: 905px;
-    height: 515px;
+    width: 100%;
+    max-height: 515px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 10px;
+    position: relative;
 }
 
-.img-4 {
+.jv-article-img-4 {
     background-image: url('https://japanview.tv/wp-content/uploads/2022/12/thumb.jpg'), linear-gradient(to bottom, rgba(163, 66, 94, 0) 0%, rgba(141, 82, 99, 0.418) 60%, rgb(172, 93, 114) 100%);
     background-blend-mode: soft-light;
-    width: 905px;
-    height: 515px;
+    width: 100%;
+    max-height: 515px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 10px;
+    position: relative;
 }
 
 .img-5 {
     background-image: url('https://japanview.tv/wp-content/uploads/2022/11/thumbnail-upi.jpg'), linear-gradient(to bottom, rgba(163, 66, 94, 0) 0%, rgba(141, 82, 99, 0.418) 60%, rgb(172, 93, 114) 100%);
     background-blend-mode: soft-light;
-    width: 905px;
-    height: 515px;
+    width: 100%;
+    max-height: 515px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 10px;
+    position: relative;
 }
 
 /* TEXT SLIDER  */
@@ -742,16 +747,77 @@ li:focus-within>button>.arrow {
 }
 
 /* ARTICLES  */
-.jv-article-img {
+
+.jv-article-img-1 {
     background-image: url('https://japanview.tv/wp-content/uploads/2022/12/01-1-1200x800.jpg'), linear-gradient(to bottom, rgba(163, 66, 94, 0) 0%, rgba(141, 82, 99, 0.418) 60%, rgb(172, 93, 114) 100%);
     background-blend-mode: soft-light;
     width: 100%;
+    max-height: 350px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
 }
-
+.jv-article-img-3 {
+    background-image: url('https://japanview.tv/wp-content/uploads/2021/09/DIS7833.jpg'), linear-gradient(to bottom, rgba(163, 66, 94, 0) 0%, rgba(141, 82, 99, 0.418) 60%, rgb(172, 93, 114) 100%);
+    background-blend-mode: soft-light;
+    width: 100%;
+    max-height: 350px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+.jv-article-img-2 {
+    background-image: url('https://japanview.tv/wp-content/uploads/2021/08/201804絵葉書.jpg'), linear-gradient(to bottom, rgba(163, 66, 94, 0) 0%, rgba(141, 82, 99, 0.418) 60%, rgb(172, 93, 114) 100%);
+    background-blend-mode: soft-light;
+    width: 100%;
+    max-height: 350px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+.jv-article-img-4 {
+    background-image: url('https://japanview.tv/wp-content/uploads/2021/07/image-01.jpg'), linear-gradient(to bottom, rgba(163, 66, 94, 0) 0%, rgba(141, 82, 99, 0.418) 60%, rgb(172, 93, 114) 100%);
+    background-blend-mode: soft-light;
+    width: 100% !important;
+    max-height: 350px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+.jv-article-body {
+    color: #fff;
+    text-align: start;
+    padding: 10px 0px;
+    /* position: absolute; */
+}
+.jv-article-txt a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 28px;
+}
+.jv-article-body .excerpt,.jv-article-body .jv-article-date {
+    font-size: 18px;
+}
+.jv-article-date p {
+    font-size: 14px;
+}
 /* target all bullets */
 .swiper-pagination-bullet.swiper-pagination-bullet {
     background-color: #f4a9be;
@@ -768,6 +834,42 @@ li:focus-within>button>.arrow {
 }
 
 .swiper-pagination {
-    position: absolute;
-    margin-top: 50px;
+    position: relative !important;
+    bottom: 0px !important;
+}
+.swiper-button-prev, .swiper-button-next {
+    color: #fff !important;
+    font-weight: bold;
+    border: 10px #ae7182 !important;
+}
+/* LEARN JAPANESE */
+.lj-1 {
+    width: 100px;
+    height: 100px;
+    background-image: url('https://japanview.tv/wp-content/uploads/2022/12/thum-binus.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    display: block;
+}
+.lj-2 {
+    width: 100px;
+    height: 100px;
+    background-image: url('https://japanview.tv/wp-content/uploads/2022/12/thum-unsada.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    display: block;
+}
+.lj-3 {
+    width: 100px;
+    height: 100px;
+    background-image: url('https://japanview.tv/wp-content/uploads/2022/12/DSC9388-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    display: block;
 }
