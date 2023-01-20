@@ -801,6 +801,9 @@ li:focus-within>button>.arrow {
     padding: 10px;
     /* position: absolute; */
 }
+.img-1 .jv-article-body {
+    padding-top: 223px;
+}
 .jv-article-txt a {
     text-decoration: none;
     color: #fff;
