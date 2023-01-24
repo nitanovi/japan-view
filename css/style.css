@@ -477,18 +477,16 @@ li:focus-within>button>.arrow {
 /* VIDEO  */
 .title {
     display: flex;
-    align-items: baseline;
     border-bottom: solid 4px #cd8d9f;
     justify-content: space-between;
     margin-top: 40px;
     margin-bottom: 20px;
-    display: flex;
-    align-items: baseline;
 }
 
 .tittle-kiri {
     display: flex;
-    align-items: baseline;
+    width: 70%;
+    height: 100%;
 }
 
 .title a {
@@ -499,7 +497,7 @@ li:focus-within>button>.arrow {
     cursor: pointer;
     margin: 0 10px;
     padding: 6px 10px 6px 10px;
-    font-size: 14px;
+    font-size: 12px;
     border-radius: 50px;
 }
 
@@ -522,6 +520,8 @@ li:focus-within>button>.arrow {
     color: #676767;
     font-size: 24px;
     margin-left: 20px;
+    display: flex;
+    align-items: end;
 }
 
 .video-content {
@@ -611,14 +611,14 @@ li:focus-within>button>.arrow {
 
 .jv-video-date {
     border: none;
-    font-size: 16px;
+    font-size: 12px;
     color: #999;
     font-weight: 500;
     padding: 0;
 }
 
 .jv-video-txt p {
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .jv-video-txt a {
@@ -639,7 +639,7 @@ li:focus-within>button>.arrow {
 }
 
 .btn-primary a {
-    font-size: 16px;
+    font-size: 12px;
     text-decoration: none;
     background: #f0866e;
     color: #fff;
@@ -723,7 +723,7 @@ li:focus-within>button>.arrow {
 
 .jv-desc-date {
     border: none;
-    font-size: 16px;
+    font-size: 12px;
     color: #999;
     font-weight: 500;
     padding: 0;
@@ -732,7 +732,7 @@ li:focus-within>button>.arrow {
 }
 
 .jv-desc-txt p {
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .jv-desc-txt a {
@@ -756,6 +756,7 @@ li:focus-within>button>.arrow {
     display: flex;
     align-items: flex-end;
 }
+
 .jv-article-img-3 {
     background-image: url('https://japanview.tv/wp-content/uploads/2021/09/DIS7833.jpg'), linear-gradient(to bottom, rgba(163, 66, 94, 0) 0%, rgba(141, 82, 99, 0.418) 60%, rgb(172, 93, 114) 100%);
     background-blend-mode: soft-light;
@@ -769,6 +770,7 @@ li:focus-within>button>.arrow {
     display: flex;
     align-items: flex-end;
 }
+
 .jv-article-img-2 {
     background-image: url('https://japanview.tv/wp-content/uploads/2021/08/201804絵葉書.jpg'), linear-gradient(to bottom, rgba(163, 66, 94, 0) 0%, rgba(141, 82, 99, 0.418) 60%, rgb(172, 93, 114) 100%);
     background-blend-mode: soft-light;
@@ -782,6 +784,7 @@ li:focus-within>button>.arrow {
     display: flex;
     align-items: flex-end;
 }
+
 .jv-article-img-4 {
     background-image: url('https://japanview.tv/wp-content/uploads/2021/07/image-01.jpg'), linear-gradient(to bottom, rgba(163, 66, 94, 0) 0%, rgba(141, 82, 99, 0.418) 60%, rgb(172, 93, 114) 100%);
     background-blend-mode: soft-light;
@@ -795,27 +798,34 @@ li:focus-within>button>.arrow {
     display: flex;
     align-items: flex-end;
 }
+
 .jv-article-body {
     color: #fff;
     text-align: start;
     padding: 10px;
     /* position: absolute; */
 }
+
 .img-1 .jv-article-body {
     padding-top: 223px;
 }
+
 .jv-article-txt a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
     font-size: 28px;
 }
-.jv-article-body .excerpt,.jv-article-body .jv-article-date {
+
+.jv-article-body .excerpt,
+.jv-article-body .jv-article-date {
     font-size: 18px;
 }
+
 .jv-article-date p {
     font-size: 14px;
 }
+
 /* target all bullets */
 .swiper-pagination-bullet.swiper-pagination-bullet {
     background-color: #f4a9be;
@@ -835,11 +845,14 @@ li:focus-within>button>.arrow {
     position: relative !important;
     bottom: 0px !important;
 }
-.swiper-button-prev, .swiper-button-next {
+
+.swiper-button-prev,
+.swiper-button-next {
     color: #fff !important;
     font-weight: bold;
     border: 10px #ae7182 !important;
 }
+
 /* LEARN JAPANESE */
 .lj-1 {
     width: 100px;
@@ -851,6 +864,7 @@ li:focus-within>button>.arrow {
     border-radius: 5px;
     display: block;
 }
+
 .lj-2 {
     width: 100px;
     height: 100px;
@@ -861,10 +875,148 @@ li:focus-within>button>.arrow {
     border-radius: 5px;
     display: block;
 }
+
 .lj-3 {
     width: 100px;
     height: 100px;
     background-image: url('https://japanview.tv/wp-content/uploads/2022/12/DSC9388-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    display: block;
+}
+
+/* EXPERIENCE */
+.title .desc-2 {
+    font-weight: bold;
+    color: #676767;
+    font-size: 18px;
+    text-align: end;
+    display: flex;
+    align-items: end;
+}
+
+.title-2 {
+    display: block;
+}
+
+.title-2-kiri {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.container {
+    max-width: 100%;
+    margin: 0px auto;
+}
+.tab-trigger{
+
+}
+.tab-trigger ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    color: #fff;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: bold;
+}
+.tab-trigger ul li{
+
+}
+.tab-trigger ul li label{
+    position: relative;
+    display: block;
+    padding: 8px 15px;
+    cursor: pointer;
+    min-width: 100px;
+    background: #cb8e9f;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+}
+.tab-trigger ul li:nth-child(1) label{
+    background: #cb8e9f;
+}
+.tab-trigger ul li:nth-child(2) label{
+    background: #ac7282;
+}
+.tab-container-wrap {
+position: relative;
+}
+.tab-container-wrap input{
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin: 0;
+    z-index: -100;
+    top: -10000px;
+}
+.tab-container-wrap input:checked + .tab-content-box {
+    display: block;
+}
+.tab-content-box {
+    display: none;
+    background: #cb8e9f;
+    padding: 20px;
+}
+.tab-content-box:nth-of-type(1) {
+    background: #cb8e9f;
+}
+.tab-content-box:nth-of-type(2) {
+    background: #ac7282;
+}
+.jv-list-tags {
+    display: flex;
+    font-size: 12px;
+    font-weight: 500;
+    flex-wrap: wrap;
+    background-color: transparent;
+}
+.jv-list-tags a {
+    padding: 0px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: lighter;
+    color: #676767;
+    margin: 0;
+    background-color: #fff;
+}
+.experience-1 {
+    width: 100px;
+    height: 100px;
+    background-image: url('https://japanview.tv/wp-content/uploads/2021/08/1階-アトリウム・ミュージアムショップ.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    display: block;
+}
+
+.experience-2 {
+    width: 100px;
+    height: 100px;
+    background-image: url('https://japanview.tv/wp-content/uploads/2021/08/ステンドグラス体験.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    display: block;
+}
+.experience-3 {
+    width: 100px;
+    height: 100px;
+    background-image: url('https://japanview.tv/wp-content/uploads/2021/08/ジンベエザメのモニュメント_H8A0935.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    display: block;
+}
+.experience-4 {
+    width: 100px;
+    height: 100px;
+    background-image: url('https://japanview.tv/wp-content/uploads/2021/08/CIMG9613.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
