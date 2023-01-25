@@ -468,10 +468,13 @@ li:focus-within>button>.arrow {
 .wrapper {
     width: 88%;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
 }
 
 .main-content {
-    width: 70%;
+    width: 65%;
 }
 
 /* VIDEO  */
@@ -483,10 +486,16 @@ li:focus-within>button>.arrow {
     margin-bottom: 20px;
 }
 
-.tittle-left {
+.title-left {
     display: flex;
-    width: 70%;
+    width: 67%;
     height: 100%;
+}
+
+.title-right {
+    display: flex;
+    align-items: end;
+    margin: 5px 0px;
 }
 
 .title a {
@@ -495,7 +504,7 @@ li:focus-within>button>.arrow {
     background-image: linear-gradient(#dd6f56, #f0866e);
     color: #fff;
     cursor: pointer;
-    margin: 0 10px;
+    margin: 0px;
     padding: 6px 10px 6px 10px;
     font-size: 12px;
     border-radius: 50px;
@@ -505,14 +514,9 @@ li:focus-within>button>.arrow {
     color: #fff;
     font-weight: bold;
     text-shadow:
-        -3px -3px 0 #cd8d9f,
-        0 -3px 0 #cd8d9f,
-        3px -3px 0 #cd8d9f,
-        3px 0 0 #cd8d9f,
-        3px 3px 0 #cd8d9f,
-        0 3px 0 #cd8d9f,
-        -3px 3px 0 #cd8d9f,
-        -3px 0 0 #cd8d9f;
+        -2px -2px 0 #cd8d9f, 0 -2px 0 #cd8d9f, 2px -2px 0 #cd8d9f, 2px 0 0 #cd8d9f, 2px 2px 0 #cd8d9f, 0 2px 0 #cd8d9f, -2px 2px 0 #cd8d9f, -2px 0 0 #cd8d9f;
+    margin: 0px 0px 0px 0px;
+    font-size: 28px;
 }
 
 .title .desc {
@@ -522,6 +526,7 @@ li:focus-within>button>.arrow {
     margin-left: 20px;
     display: flex;
     align-items: end;
+    margin-bottom: 5px;
 }
 
 .video-content {
@@ -868,7 +873,7 @@ li:focus-within>button>.arrow {
 .lj-2 {
     width: 100px;
     height: 100px;
-    background-image: url('https://japanview.tv/wp-content/uploads/2022/12/thum-unsada.png');
+    background-image: url('https://japanview.tv/wp-content/uploads/2022/12/DSC9388-1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -879,7 +884,7 @@ li:focus-within>button>.arrow {
 .lj-3 {
     width: 100px;
     height: 100px;
-    background-image: url('https://japanview.tv/wp-content/uploads/2022/12/DSC9388-1.jpg');
+    background-image: url('https://japanview.tv/wp-content/uploads/2022/12/thum-unsada.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -906,14 +911,15 @@ li:focus-within>button>.arrow {
     justify-content: space-between;
     width: 100%;
 }
+
 .container {
     max-width: 100%;
     margin: 0px auto;
 }
-.tab-trigger{
 
-}
-.tab-trigger ul{
+.tab-trigger {}
+
+.tab-trigger ul {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -922,10 +928,10 @@ li:focus-within>button>.arrow {
     font-family: 'Gilroy', sans-serif;
     font-weight: bold;
 }
-.tab-trigger ul li{
 
-}
-.tab-trigger ul li label{
+.tab-trigger ul li {}
+
+.tab-trigger ul li label {
     position: relative;
     display: block;
     padding: 8px 15px;
@@ -935,37 +941,45 @@ li:focus-within>button>.arrow {
     border-radius: 8px 8px 0 0;
     text-align: center;
 }
-.tab-trigger ul li:nth-child(1) label{
+
+.tab-trigger ul li:nth-child(1) label {
     background: #cb8e9f;
 }
-.tab-trigger ul li:nth-child(2) label{
+
+.tab-trigger ul li:nth-child(2) label {
     background: #ac7282;
 }
+
 .tab-container-wrap {
-position: relative;
+    position: relative;
 }
-.tab-container-wrap input{
+
+.tab-container-wrap input {
     position: absolute;
     width: 0;
     height: 0;
     margin: 0;
     z-index: -100;
-    top: -10000px;
 }
-.tab-container-wrap input:checked + .tab-content-box {
+
+.tab-container-wrap input:checked+.tab-content-box {
     display: block;
 }
+
 .tab-content-box {
     display: none;
     background: #cb8e9f;
     padding: 10px 10px 1px 10px;
 }
+
 .tab-content-box:nth-of-type(1) {
     background: #cb8e9f;
 }
+
 .tab-content-box:nth-of-type(2) {
     background: #ac7282;
 }
+
 .jv-list-tags {
     display: flex;
     font-size: 12px;
@@ -973,22 +987,25 @@ position: relative;
     flex-wrap: wrap;
     background-color: transparent;
 }
+
 .jv-list-tags a {
     padding: 0px 10px;
     border-radius: 10px;
     font-size: 10px;
     font-weight: lighter;
     color: #676767;
-    margin: 0;
+    margin: 0px 5px;
     background-color: #fff;
 }
-.jv-desc-txt .excerpt{
+
+.jv-desc-txt .excerpt {
     font-size: 12px;
     font-weight: lighter;
     color: rgb(59, 59, 59);
     margin: 0;
     padding: 2px 0px 10px;
 }
+
 .experience-1 {
     width: 100px;
     height: 100px;
@@ -1010,6 +1027,7 @@ position: relative;
     border-radius: 5px;
     display: block;
 }
+
 .experience-3 {
     width: 100px;
     height: 100px;
@@ -1020,6 +1038,7 @@ position: relative;
     border-radius: 5px;
     display: block;
 }
+
 .experience-4 {
     width: 100px;
     height: 100px;
@@ -1030,11 +1049,218 @@ position: relative;
     border-radius: 5px;
     display: block;
 }
+
 .jv-experience-item {
-display: flex;
+    display: flex;
     border: none;
     margin: 0 0 10px 0px;
     background: rgba(255, 255, 255, 0.774);
     padding: 10px;
     border-radius: 10px;
+}
+
+/* COMMUNITY CORNER */
+.title-cc {
+    border-bottom: solid 4px #676767;
+}
+
+.title-cc h1 {
+    text-shadow: -2px -2px 0 #676767, 0 -2px 0 #676767, 2px -2px 0 #676767, 2px 0 0 #676767, 2px 2px 0 #676767, 0 2px 0 #676767, -2px 2px 0 #676767, -2px 0 0 #676767;
+}
+
+.cc-1 {
+    width: 200px;
+    height: 100px;
+    background-image: url('https://japanview.tv/wp-content/uploads/2022/12/image-6.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    display: block;
+}
+
+.cc-2 {
+    width: 200px;
+    height: 100px;
+    background-image: url('https://japanview.tv/wp-content/uploads/2023/01/25136211_m.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    display: block;
+}
+
+.cc-3 {
+    width: 200px;
+    height: 100px;
+    background-image: url('https://japanview.tv/wp-content/uploads/2023/01/b6965bcfa6186430dcc6.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    display: block;
+}
+
+.cc-4 {
+    width: 200px;
+    height: 100px;
+    background-image: url('https://japanview.tv/wp-content/uploads/2023/01/5631213068_68ac45647c_c.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    display: block;
+}
+
+/* SIDE BAR */
+.jv-sidebar {
+    width: 100%;
+}
+.jv-sidebar h3 {
+    border-bottom: solid 4px #67b1b6;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+/* PR BOX */
+.pr-box h3 {
+    background: url(../img/PR-info.png) left center no-repeat;
+    color: #fff;
+    font-weight: bold;
+    text-shadow:
+        -2px -2px 0 #67b1b6, 0 -2px 0 #67b1b6, 2px -2px 0 #67b1b6, 2px 0 0 #67b1b6, 2px 2px 0 #67b1b6, 0 2px 0 #67b1b6, -2px 2px 0 #67b1b6, -2px 0 0 #67b1b6;
+    font-size: 22px;
+    padding: 10px 0 10px 45px;
+    margin: 20px 0 10px;
+}
+.pr-banner img {
+    max-width: 100%;
+    height: auto;}
+
+.recent-fix h3{
+    color: #fff;
+    font-weight: bold;
+    text-shadow:
+        -2px -2px 0 #67b1b6, 0 -2px 0 #67b1b6, 2px -2px 0 #67b1b6, 2px 0 0 #67b1b6, 2px 2px 0 #67b1b6, 0 2px 0 #67b1b6, -2px 2px 0 #67b1b6, -2px 0 0 #67b1b6;
+    font-size: 28px;
+}
+/* TODAY'S MOST POPULAR */
+.daily-1 {
+    width: 100px;
+    height: 100px;
+    background-image: url('https://japanview.tv/wp-content/uploads/2023/01/25469600_m.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    display: block;
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+.daily-2 {
+    width: 100px;
+    height: 100px;
+    background-image: url('https://japanview.tv/wp-content/uploads/2022/12/01-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    display: block;
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+.daily-3 {
+    width: 100px;
+    height: 100px;
+    background-image: url('https://japanview.tv/wp-content/uploads/2022/12/1-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    display: block;
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+.daily-4 {
+    width: 100px;
+    height: 100px;
+    background-image: url('https://japanview.tv/wp-content/uploads/2022/12/sub1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    display: block;
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+.daily-5 {
+    width: 100px;
+    height: 100px;
+    background-image: url('https://japanview.tv/wp-content/uploads/2022/12/thumb.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    display: block;
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+.jv-list-item{
+    display: flex;
+    border: none;
+    margin: 0 0 25px;
+}
+.jv-list-item .jv-list-body{
+    flex-direction: column;
+    position: relative;
+    color: #212529;
+}
+.jv-list-item .jv-list-body a{
+    color: rgb(59, 59, 59);
+    font-weight: bold;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+.daily-rank .jv-list-txt p {
+    margin: 0;
+    line-height:8px
+}
+.daily-rank .jv-list-body {
+    bottom: 0px;
+}
+.daily-rank .jv-list-img::after {
+    position: absolute;
+    color: #fff;
+    border-radius: 50%;
+    width: 29px;
+    height: 29px;
+    left: -122px;
+    top: -8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.daily-rank .jv-list-item :nth-child(1)::after {
+    content: '1';
+    background: #fc575b;
+}
+.daily-rank .jv-list-item:nth-child(2)::after {
+    content: '2';
+    background: #d2b946;
+}
+.daily-rank .jv-list-item:nth-child(3)::after {
+    content: '3';
+    background: #7accc8;
+}
+.daily-rank .jv-list-item:nth-child(4)::after {
+    content: '4';
+    background: #7b929f;
+}
+.daily-rank .jv-list-item:nth-child(5)::after {
+    content: '5';
+    background: #bbbbbb;
 }
