@@ -25,13 +25,13 @@
 
 body {
     font-family: 'Gilroy', sans-serif;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 100;
 }
 
 .nav-logo {
     font-family: 'Karla', sans-serif;
-    font-size: 24px;
+    font-size: 26px;
     color: #fff;
     max-height: 76px;
     align-items: center;
@@ -102,7 +102,7 @@ input[type=search] {
 
 .logo {
     text-decoration: none;
-    font-size: 25px;
+    font-size: 26px;
     color: inherit;
     margin-right: 20px;
 }
@@ -160,9 +160,7 @@ input[type="checkbox"]:focus+label::before {
     box-shadow: 0 0 20px black;
 }
 
-ul {
-    background: #f2f2f2;
-}
+ul {}
 
 ul li {
     list-style: none;
@@ -259,6 +257,7 @@ li:focus-within>button>.arrow {
         font-size: 16px;
         align-items: center;
         margin: 0 auto;
+        justify-content: space-around;
     }
 
     button {
@@ -275,7 +274,7 @@ li:focus-within>button>.arrow {
 
     ul li {
         position: relative;
-        font-size: 14px;
+        font-size: 16px;
     }
 
     ul li a:hover,
@@ -306,19 +305,11 @@ li:focus-within>button>.arrow {
     }
 }
 
-.swiper-slide {
-    position: relative;
-    display: flex;
-    align-items: center;
-
-}
-
-.jv-slide-img span {
+.mySwiper1 .jv-slide-img span {
     background: #c80d0d;
     color: #fff;
     position: absolute;
     top: 10px;
-    left: 8PX;
     padding: 0px 10px 0px 25px;
     height: 26px;
     z-index: 10;
@@ -326,7 +317,7 @@ li:focus-within>button>.arrow {
     align-items: center;
 }
 
-.jv-slide-img span::after {
+.mySwiper1 .jv-slide-img span::after {
     content: '';
     position: absolute;
     left: 100%;
@@ -340,7 +331,6 @@ li:focus-within>button>.arrow {
 /* SLIDER  */
 .new-slider {
     font-weight: normal;
-    overflow: visible;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -350,12 +340,24 @@ li:focus-within>button>.arrow {
     width: 100%;
     height: 100%;
 }
-
+.mySwiper1 {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: visible;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    width: 100%
+}
+.mySwiper1 .swiper-wrapper {
+    width: 100%;
+}
 .swiper-slide {
     font-size: 18px;
-    width: 88%;
-    height: auto;
+    max-width: 100%;
     text-align: center;
+    position: relative;
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -383,7 +385,7 @@ li:focus-within>button>.arrow {
 .img-1 {
     background-image: url('https://japanview.tv/wp-content/uploads/2022/12/01-1-1200x800.jpg'), linear-gradient(to bottom, rgba(163, 66, 94, 0) 0%, rgba(141, 82, 99, 0.418) 60%, rgb(172, 93, 114) 100%);
     background-blend-mode: soft-light;
-    width: 905px;
+    min-width: 88vw;
     max-height: 515px;
     background-size: cover;
     background-position: center;
@@ -394,7 +396,7 @@ li:focus-within>button>.arrow {
 .img-2 {
     background-image: url('https://japanview.tv/wp-content/uploads/2022/12/1-1.jpg'), linear-gradient(to bottom, rgba(163, 66, 94, 0) 0%, rgba(141, 82, 99, 0.418) 60%, rgb(172, 93, 114) 100%);
     background-blend-mode: soft-light;
-    width: 905px;
+    min-width: 88vw;
     height: 515px;
     background-size: cover;
     background-position: center;
@@ -405,7 +407,7 @@ li:focus-within>button>.arrow {
 .img-3 {
     background-image: url('https://japanview.tv/wp-content/uploads/2022/12/sub1-1200x800.jpg'), linear-gradient(to bottom, rgba(163, 66, 94, 0) 0%, rgba(141, 82, 99, 0.418) 60%, rgb(172, 93, 114) 100%);
     background-blend-mode: soft-light;
-    width: 905px;
+    min-width: 88vw;
     height: 515px;
     background-size: cover;
     background-position: center;
@@ -416,7 +418,7 @@ li:focus-within>button>.arrow {
 .img-4 {
     background-image: url('https://japanview.tv/wp-content/uploads/2022/12/thumb.jpg'), linear-gradient(to bottom, rgba(163, 66, 94, 0) 0%, rgba(141, 82, 99, 0.418) 60%, rgb(172, 93, 114) 100%);
     background-blend-mode: soft-light;
-    width: 905px;
+    min-width: 88vw;
     height: 515px;
     background-size: cover;
     background-position: center;
@@ -427,21 +429,46 @@ li:focus-within>button>.arrow {
 .img-5 {
     background-image: url('https://japanview.tv/wp-content/uploads/2022/11/thumbnail-upi.jpg'), linear-gradient(to bottom, rgba(163, 66, 94, 0) 0%, rgba(141, 82, 99, 0.418) 60%, rgb(172, 93, 114) 100%);
     background-blend-mode: soft-light;
-    width: 905px;
+    min-width: 88vw;
     height: 515px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 10px;
 }
+/* SLIDER2  */
+.article-content .swiper {
+    width: 100%;
+    height: 100%;
+}
 
+.article-content .swiper-slide {
+    font-size: 18px;
+    width: 88%;
+    height: auto;
+    text-align: center;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
 /* TEXT SLIDER  */
 .jv-slide-body {
     display: flex;
     position: absolute;
     bottom: 15px;
     color: #fff;
-    font-size: 34px;
+    font-size: 26px;
     align-items: center;
 }
 
@@ -505,7 +532,7 @@ li:focus-within>button>.arrow {
     cursor: pointer;
     margin: 0px;
     padding: 6px 10px 6px 10px;
-    font-size: 12px;
+    font-size: 16px;
     border-radius: 50px;
 }
 
@@ -515,7 +542,7 @@ li:focus-within>button>.arrow {
     text-shadow:
         -2px -2px 0 #cd8d9f, 0 -2px 0 #cd8d9f, 2px -2px 0 #cd8d9f, 2px 0 0 #cd8d9f, 2px 2px 0 #cd8d9f, 0 2px 0 #cd8d9f, -2px 2px 0 #cd8d9f, -2px 0 0 #cd8d9f;
     margin: 0px 0px 0px 0px;
-    font-size: 28px;
+    font-size: 34px;
 }
 
 .title .desc {
@@ -615,14 +642,14 @@ li:focus-within>button>.arrow {
 
 .jv-video-date {
     border: none;
-    font-size: 12px;
+    font-size: 16px;
     color: #999;
     font-weight: 500;
     padding: 0;
 }
 
 .jv-video-txt p {
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .jv-video-txt a {
@@ -643,7 +670,7 @@ li:focus-within>button>.arrow {
 }
 
 .btn-primary a {
-    font-size: 12px;
+    font-size: 16px;
     text-decoration: none;
     background: #f0866e;
     color: #fff;
@@ -727,7 +754,7 @@ li:focus-within>button>.arrow {
 
 .jv-desc-date {
     border: none;
-    font-size: 12px;
+    font-size: 16px;
     color: #999;
     font-weight: 500;
     padding: 0;
@@ -736,7 +763,7 @@ li:focus-within>button>.arrow {
 }
 
 .jv-desc-txt p {
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .jv-desc-txt a {
@@ -823,11 +850,11 @@ li:focus-within>button>.arrow {
 
 .jv-article-body .excerpt,
 .jv-article-body .jv-article-date {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .jv-article-date p {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 /* target all bullets */
@@ -981,7 +1008,7 @@ li:focus-within>button>.arrow {
 
 .jv-list-tags {
     display: flex;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 500;
     flex-wrap: wrap;
     background-color: transparent;
@@ -990,7 +1017,7 @@ li:focus-within>button>.arrow {
 .jv-list-tags a {
     padding: 0px 10px;
     border-radius: 10px;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: lighter;
     color: #676767;
     margin: 0px 5px;
@@ -998,7 +1025,7 @@ li:focus-within>button>.arrow {
 }
 
 .jv-desc-txt .excerpt {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: lighter;
     color: rgb(59, 59, 59);
     margin: 0;
@@ -1129,7 +1156,7 @@ li:focus-within>button>.arrow {
     font-weight: bold;
     text-shadow:
         -2px -2px 0 #67b1b6, 0 -2px 0 #67b1b6, 2px -2px 0 #67b1b6, 2px 0 0 #67b1b6, 2px 2px 0 #67b1b6, 0 2px 0 #67b1b6, -2px 2px 0 #67b1b6, -2px 0 0 #67b1b6;
-    font-size: 22px;
+    font-size: 28px;
     padding: 10px 0 10px 45px;
     margin: 20px 0 10px;
 }
@@ -1144,7 +1171,7 @@ li:focus-within>button>.arrow {
     font-weight: bold;
     text-shadow:
         -2px -2px 0 #67b1b6, 0 -2px 0 #67b1b6, 2px -2px 0 #67b1b6, 2px 0 0 #67b1b6, 2px 2px 0 #67b1b6, 0 2px 0 #67b1b6, -2px 2px 0 #67b1b6, -2px 0 0 #67b1b6;
-    font-size: 28px;
+    font-size: 34px;
 }
 
 /* TODAY'S MOST POPULAR */
@@ -1229,7 +1256,7 @@ li:focus-within>button>.arrow {
 .jv-list-item .jv-list-body a {
     color: rgb(59, 59, 59);
     font-weight: bold;
-    font-size: 12px;
+    font-size: 16px;
     margin: 0;
     padding: 0;
 }
@@ -1256,7 +1283,7 @@ li:focus-within>button>.arrow {
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .daily-rank .jv-list-item:nth-child(1)::after {
@@ -1288,7 +1315,7 @@ li:focus-within>button>.arrow {
 .popular-keyword a {
     color: #67b1b6;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 16px;
     background-color: transparent;
     border: 1px solid #cd8d9f;
     border-radius: 15px;
@@ -1297,37 +1324,44 @@ li:focus-within>button>.arrow {
 }
 
 /* FOOTER */
+.jv-footer {
+    background-color: #e5fcff;
+    color: #333;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 16px;
+}
+
 .jv-footer-wrapper {
-    max-width: 92%;
+    width: 1240px;
+    flex-wrap: wrap;
+}
+
+.jv-footer-wrapper {
+    width: 92%;
     margin: auto;
     padding: 40px 0;
     font-size: 0.9em;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .jv-footer-logo {
     flex: none;
 }
 
-.jv-footer-logo1,
+.jv-footer-logo1 img {
+    display: block;
+    max-width: 120px;
+}
+
 .jv-footer-logo2 {
     display: block;
     max-width: 120px;
 }
-.jv-footer-logo1 img,
-.jv-footer-logo2 img{
-    max-width: 120px;
-}
 
 .jv-footer-menu {
-    flex: 0 0 auto;
-}
-
-.id_ID .jv-footer-menu>ul {
-    flex-wrap: wrap;
-    width: 100%;
+    flex: none;
+    width: 86%;
 }
 
 .jv-footer-menu .first-link>a {
@@ -1335,14 +1369,111 @@ li:focus-within>button>.arrow {
     display: block;
     padding: 0 0 10px;
     font-size: 16px;
+    font-weight: bold;
+}
+
+.jv-footer-menu {
+    flex: 0 0 auto;
+}
+
+.jv-footer-menu li {
+    border: none;
 }
 
 .jv-footer-menu ul {
     display: flex;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.jv-footer-copy {
+    background: #e1ebf0;
+    max-width: 100%;
+    text-align: left;
+}
+
+.jv-footer-copy span {
+    display: block;
+    max-width: 92%;
+    margin: 0 auto;
 }
 
 .jv-footer-menu li ul {
     width: 11em;
     padding: 10px 0 0;
+}
+
+.jv-footer-menu li:not(:first-child) ul {
+    font-family: 'Gilroy', sans-serif;
+}
+
+.jv-footer-menu li:last-child ul {
+    display: block;
+}
+
+.jv-footer-menu li {
+    padding: 0 10px 8px;
+}
+
+.jv-footer-menu li:nth-child(4) ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.jv-footer-menu li:nth-child(4) ul li {
+    flex: 0 0 4em;
+}
+
+.jv-footer-logo2 {
+    max-width: 120px;
+    display: block;
+}
+
+.jv-footer-logo2 img {
+    width: 100%;
+}
+
+.id_ID .jv-footer-menu>ul {
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.id_ID .jv-footer-menu li:last-child ul {
+    width: auto;
+}
+
+.jv-footer-menu li:nth-child(4) ul {
+    width: 14em;
+}
+
+.jv-footer-menu li:nth-child(4) li {
+    width: 7em;
+    flex: none;
+}
+
+.jv-footer-menu .nav-contents>li {
+    padding: 0 0 0 24px;
+}
+.jv-footer-menu li:nth-child(4) ul li {
+    flex: none;
+}
+
+.jv-footer-menu li li {
+    border: 0;
+    padding: 8px 0 0;
+}
+
+.jv-footer-menu a {
+    margin: 0;
+    padding: 0;
+}
+#menu-item-19221 .sub-menu {
+    display: block;
+}
+#menu-item-19224 .sub-menu {
+    display: block;
+}
+#menu-item-19228 .sub-menu {
+    display: block;
 }
