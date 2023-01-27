@@ -20,9 +20,13 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    outline: 1px solid red;
 }
-
+#top {
+    position: sticky; /* Fixed/sticky position */
+    z-index: 1000; /* Make sure it does not overlap */
+    top: 0;
+    display: block;
+}
 body {
     font-family: 'Gilroy', sans-serif;
     font-size: 26px;
@@ -90,6 +94,7 @@ input[type=search] {
     position: relative;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     margin: 0 auto;
+    background-color: #fff;
 }
 
 .header-content {
@@ -340,7 +345,7 @@ li:focus-within>button>.arrow {
 }
 
 .mySwiper1 {
-    margin-left: auto;
+    margin-left: auto!;
     margin-right: auto;
     position: relative;
     overflow: visible;
@@ -393,11 +398,13 @@ li:focus-within>button>.arrow {
 .swiper-slide.swiper-slide-prev {
     transform: translateX(15%);
     z-index: -10;
+    visibility: hidden;
 }
 
 .swiper-slide.swiper-slide-next {
     transform: translateX(-15%);
     z-index: -10;
+    visibility: hidden;
 }
 
 
@@ -1282,11 +1289,12 @@ li:focus-within>button>.arrow {
     font-size: 16px;
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 .daily-rank .jv-list-txt p {
     margin: 0;
-    line-height: 8px
+    line-height: 15px
 }
 
 .daily-rank .jv-list-body {
@@ -1352,6 +1360,7 @@ li:focus-within>button>.arrow {
     color: #333;
     font-family: 'Gilroy', sans-serif;
     font-size: 16px;
+    margin-top: 50px;
 }
 
 .jv-footer-wrapper {
