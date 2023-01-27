@@ -21,12 +21,16 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
 #top {
-    position: sticky; /* Fixed/sticky position */
-    z-index: 1000; /* Make sure it does not overlap */
+    position: sticky;
+    /* Fixed/sticky position */
+    z-index: 1000;
+    /* Make sure it does not overlap */
     top: 0;
     display: block;
 }
+
 body {
     font-family: 'Gilroy', sans-serif;
     font-size: 26px;
@@ -345,7 +349,7 @@ li:focus-within>button>.arrow {
 }
 
 .mySwiper1 {
-    margin-left: auto!;
+    margin-left: auto !;
     margin-right: auto;
     position: relative;
     overflow: visible;
@@ -357,7 +361,6 @@ li:focus-within>button>.arrow {
 
 .mySwiper1 .swiper-wrapper {
     width: 100%;
-    justify-content: center;
 }
 
 .mySwiper2 .swiper-wrapper {
@@ -387,12 +390,10 @@ li:focus-within>button>.arrow {
 
 .mySwiper1 .swiper-slide.swiper-slide-prev {
     transform: translateX(15%);
-    margin-right: 70px;
 }
 
 .mySwiper1 .swiper-slide.swiper-slide-next {
     transform: translateX(-15%);
-    margin-left: 70px;
 }
 
 .swiper-slide.swiper-slide-prev {
@@ -534,7 +535,7 @@ li:focus-within>button>.arrow {
 }
 
 .main-content {
-    width: 65%;
+    width: 70%;
 }
 
 /* VIDEO  */
@@ -1517,10 +1518,14 @@ li:focus-within>button>.arrow {
 /* MEDIA BUTTON */
 .media-button {
     display: inline-grid;
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
 }
 
 .media-button .icon {
@@ -1535,9 +1540,11 @@ li:focus-within>button>.arrow {
     z-index: 2;
     transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+
 .media-button .instagram {
     margin-bottom: 20px;
 }
+
 .media-button .icon span {
     display: block;
     height: 60px;
@@ -1576,9 +1583,11 @@ li:focus-within>button>.arrow {
     opacity: 1;
     pointer-events: auto;
 }
+
 .fab {
     color: #fff;
 }
+
 .icon .tooltip:before {
     position: absolute;
     content: "";
@@ -1605,6 +1614,7 @@ li:focus-within>button>.arrow {
 .media-button .instagram:hover .tooltip:before {
     background: #67b1b6;
 }
+
 .media-button .language:hover span,
 .media-button .language:hover .tooltip,
 .media-button .language:hover .tooltip:before {
@@ -1618,4 +1628,28 @@ li:focus-within>button>.arrow {
     align-items: center;
     justify-content: center;
     padding: 17px 25px 17px 1px;
+}
+
+/* WEB SINGLE NEWS */
+.wrapper-edit {
+    width: 65%;
+}
+.breadcrumbs {
+    width: 94%;
+    margin: 35px auto 20px auto;
+}
+
+.crumbs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.crumbs li:hover a {
+    color: #FF3D46;
+    border-bottom: 4px solid #FF3D46;
+}
+
+.crumbs li:not(:last-child)::after {
+    content: '>';
+    margin: 0 20px;
 }
